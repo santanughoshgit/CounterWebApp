@@ -1,0 +1,48 @@
+1. Create Web Project from Maven Template
+mvn archetype:generate -DgroupId=com.mkyong -DartifactId=CounterWebApp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+2. Project Directory Layout
+web.xml – Servlet 2.3 is too old, consider upgrade to 2.5
+
+3. Eclipse IDE Support
+mvn eclipse:eclipse -Dwtpversion=2.0
+
+4. Update POM
+
+#Before 
+mvn eclipse:eclipse --> Eclipse Java project (JAR)
+mvn eclipse:eclipse -Dwtpversion=2.0 --> Eclipse Java web project (WAR)
+ 
+#Now
+mvn eclipse:eclipse --> Eclipse Java web project (WAR)
+
+mvn eclipse:eclipse
+
+mvn eclipse:eclipse
+
+mvn package
+
+mvn tomcat:run
+
+http://localhost:8080/CounterWebApp/
+
+
+http://localhost:8080/CounterWebApp/mkyong
+
+
+http://localhost:8080/CounterWebApp/android
+
+http://www.mkyong.com/maven/how-to-create-a-web-application-project-with-maven/
+------------------------------
+
+JBoss 7
+
+mvn jboss-as:deploy
+
+mvn jboss-as:redeploy
+
+mvn jboss-as:undeploy
+
+mvn jboss-as:start
+
+mvn jboss-as:shutdown
