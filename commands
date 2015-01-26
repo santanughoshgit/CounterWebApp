@@ -50,3 +50,5 @@ mvn jboss-as:shutdown
 mvn jboss-as:deploy -Dhost=localhost -Dport=7001
 
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+---------------------------------------------------------------------------------------
